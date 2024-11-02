@@ -1,0 +1,16 @@
+html,
+body {
+  overscroll-behavior-y: none;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  font: var(--font-base);
+  touch-action: manipulation;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  -webkit-touch-callout: none;
+}

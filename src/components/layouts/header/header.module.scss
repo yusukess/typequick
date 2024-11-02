@@ -1,0 +1,25 @@
+@use '@styles/mixins';
+
+.wrapper {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 20px;
+
+  z-index: 2;
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  width: var(--pc-inner-width);
+  margin: -150px auto 0;
+
+  @include mixins.mq(sm) {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: auto;
+    justify-content: flex-end;
+    width: 100%;
+    padding: 30px 30px 0 0;
+    margin: 0;
+  }
+}

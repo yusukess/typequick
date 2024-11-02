@@ -1,0 +1,7 @@
+.nuxt
+content
+dist
+content/**/*.md
+src/app.html
+src/static/**/*.html
+vocacolle-player.min.js

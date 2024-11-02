@@ -1,0 +1,69 @@
+@use '@styles/mixins';
+
+.wrapper {
+  width: 100%;
+  --padding: 50px 0;
+  min-width: var(--pc-width);
+  padding: var(--padding);
+  background-color: var(--color-sky-blue);
+
+  @include mixins.mq(sm) {
+    --padding: 50px 0 10px;
+    min-width: auto;
+  }
+}
+
+.inner {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  width: var(--pc-inner-width);
+  margin: 0 auto;
+  color: var(--color-white);
+
+  @include mixins.mq(sm) {
+    gap: 20px;
+    width: 100%;
+    padding: 0 30px;
+  }
+}
+
+.logo {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  font-weight: var(--font-weight-bold);
+
+  @include mixins.mq(sm) {
+    gap: 10px;
+    font-size: 1rem;
+    line-height: 1;
+  }
+
+  svg {
+    aspect-ratio: 196.871/25;
+
+    @include mixins.mq(sm) {
+      width: 118px;
+      height: auto;
+    }
+  }
+}
+
+.address {
+  font-size: 1.4rem;
+  line-height: 1.5;
+
+  @include mixins.mq(sm) {
+    font-size: 1rem;
+  }
+}
+
+.copyright {
+  font-size: 1rem;
+
+  @include mixins.mq(sm) {
+    font-size: 0.8rem;
+    text-align: center;
+  }
+}

@@ -1,0 +1,34 @@
+:root {
+  /* color */
+  --color-black: #000;
+  --color-gray: #707070;
+  --color-white: #fff;
+  --color-bland: #004b9e;
+  --color-light-blue: #d8ecfe;
+  --color-pale-blue: #f2f7fb;
+  --color-sky-blue: #009de8;
+  --color-dark-blue: #6c7a87;
+
+  /* font */
+  --font-base: 1.6rem/2 'Helvetica Neue', Helvetica, Arial, '游ゴシック体', 'YuGothic', '游ゴシック Medium',
+    'Yu Gothic Medium', '游ゴシック', 'Yu Gothic', sans-serif;
+  --font-mincho: YuMincho, serif;
+  --font-en: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+
+  --font-weight-light: 300;
+  --font-weight-normal: 400;
+  --font-weight-medium: 500;
+  --font-weight-semi-bold: 600;
+  --font-weight-bold: 700;
+  --font-weight-extra-bold: 800;
+  --font-weight-black: 800;
+
+  /** z-index */
+  --z-index-max: 2147483647;
+
+  /* size */
+  --pc-width: 1366px;
+  --pc-inner-width: 1024px;
+  --sp-width: 375px;
+  --sp-inner-width: 295px;
+}

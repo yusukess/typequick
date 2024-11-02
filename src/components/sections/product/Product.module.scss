@@ -1,0 +1,44 @@
+.list {
+  padding-top: 48px;
+
+  &:first-child {
+    padding-top: 0;
+  }
+}
+
+.item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 16px;
+  font-size: 16px;
+  font-weight: bold;
+  border-bottom: 2px solid #ccc;
+}
+
+.q {
+  display: inline-block;
+  margin-right: 8px;
+  font-size: 24px;
+  font-weight: bold;
+  white-space: nowrap;
+}
+
+.text {
+  display: inline-block;
+}
+
+.answer {
+  padding: 8px 12px;
+  font-size: 15px;
+  color: #333;
+  white-space: pre-wrap;
+}
+
+.link {
+  color: #0969da;
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
