@@ -4,7 +4,7 @@
   display: flex;
   flex-direction: column;
   width: 100%;
-  min-width: 1334px;
+  min-width: var(--pc-width);
   min-height: 100vh;
 
   @include mixins.mq(sm) {
@@ -20,39 +20,10 @@
   // }
 }
 
-.banner {
-  display: flex;
-  flex-direction: column;
-  gap: 4px;
-  align-items: center;
-  justify-content: center;
-  padding: 8px 0;
-  font-size: 16px;
-  font-weight: bold;
-  background-color: #efefef;
-}
+.inner {
+  margin-top: 60px;
 
-.link {
-  color: #0969da;
-  text-decoration: none;
-
-  &:hover {
-    text-decoration: underline;
+  @include mixins.mq(sm) {
+    margin-top: 0;
   }
-}
-
-.article {
-  display: flex;
-  flex-direction: column;
-  flex-grow: 1;
-  width: 100%;
-  max-width: 1280px;
-  padding: 24px 16px;
-  margin: 0 auto;
-}
-
-.section {
-  display: flex;
-  flex-direction: column;
-  gap: 32px;
 }

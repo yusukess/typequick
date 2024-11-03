@@ -1,7 +1,6 @@
 import type { Metadata, Viewport } from 'next';
 import 'the-new-css-reset/css/reset.css';
 import '@styles/global.scss';
-
 import Footer from '@layouts/footer/footer';
 
 export const metadata: Metadata = {

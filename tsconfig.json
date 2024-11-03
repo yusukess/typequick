@@ -20,9 +20,11 @@
     "baseUrl": "./",
     "paths": {
       "@styles/*": ["src/styles/*"],
-      "@layouts/*": ["src/components/layouts/*"],
-      "@components/*": ["src/components/common/*"],
-      "@sections/*": ["src/components/sections/*"]
+      "@layouts/*": ["src/layouts/*"],
+      "@components/*": ["src/components/*"],
+      "@sections/*": ["src/sections/*"],
+      "@images/*": ["src/images/*"],
+      "@icons/*": ["src/icons/*"]
     }
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],

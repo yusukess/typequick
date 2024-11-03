@@ -1,6 +1,6 @@
 import styles from './globalMenu.module.scss';
 import Link from 'next/link';
-import LinkIcon from 'src/icon/link.svg';
+import LinkIcon from '@icons/link.svg';
 
 const GlobalMenu = (Props: any) => {
   return (
@@ -23,7 +23,8 @@ const GlobalMenu = (Props: any) => {
         </li>
         <li className={styles.item}>
           <Link href="https://www.datapacific.co.jp/typequick/" rel="noopener noreferrer" target="_blank">
-            Official Site<LinkIcon></LinkIcon>
+            Official Site
+            <LinkIcon />
           </Link>
         </li>
       </ul>

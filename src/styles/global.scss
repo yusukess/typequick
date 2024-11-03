@@ -1,7 +1,2 @@
 @use './variables';
 @use './base';
-
-body {
-  overflow: hidden scroll;
-  font: var(--font-base);
-}

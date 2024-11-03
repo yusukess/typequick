@@ -1,39 +1,16 @@
 import styles from './page.module.scss';
-import Mv from 'src/components/sections/mv/mv';
+import Mv from '@sections/mv/mv';
 import Header from '@layouts/header/header';
+import About from '@sections/about/about';
 
 export default function Home() {
   return (
     <main className={styles.main}>
       <Mv />
       <Header />
-      <br></br>
-      <br></br>
-      <br></br>
-      <br></br>
-      <br></br>
-      <br></br>
-      <br></br>
-      <br></br>
-      <br></br>
-      <br></br>
-      <br></br>
-      <br></br>
-      <br></br>
-      <br></br>
-      <br></br>
-      <br></br>
-      <br></br>
-      <br></br>
-      <br></br>
-      <br></br>
-      <br></br>
-      <br></br>
-      <br></br>
-      <br></br>
-      <br></br>
-      <br></br>
-      <br></br>
+      <div className={styles.inner}>
+        <About />
+      </div>
     </main>
   );
 }

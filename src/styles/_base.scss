@@ -1,3 +1,5 @@
+@use '@styles/mixins';
+
 html,
 body {
   overscroll-behavior-y: none;
@@ -8,9 +10,16 @@ html {
 }
 
 body {
-  font: var(--font-base);
+  font-family: var(--font-base);
+  font-size: 1.6rem;
+  line-height: 2;
+  color: var(--color-black);
   touch-action: manipulation;
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
   -webkit-touch-callout: none;
+
+  @include mixins.mq(sm) {
+    font-size: 1.2rem;
+  }
 }

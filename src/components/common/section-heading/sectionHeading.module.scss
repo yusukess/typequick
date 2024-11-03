@@ -1,0 +1,47 @@
+@use '@styles/mixins';
+
+.wrapper {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 49px;
+
+  @include mixins.mq(sm) {
+    margin-bottom: 40px;
+  }
+}
+
+.en {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  font-family: var(--font-en);
+  font-size: 1.6rem;
+  font-style: oblique;
+  font-weight: var(--font-weight-bold);
+
+  @include mixins.mq(sm) {
+    font-size: 1rem;
+  }
+
+  &::after {
+    display: block;
+    width: 229px;
+    height: 1px;
+    content: '';
+    background-color: var(--color-black);
+
+    @include mixins.mq(sm) {
+      width: 75px;
+    }
+  }
+}
+
+.ja {
+  font-size: 1.6rem;
+
+  @include mixins.mq(sm) {
+    font-size: 1rem;
+  }
+}

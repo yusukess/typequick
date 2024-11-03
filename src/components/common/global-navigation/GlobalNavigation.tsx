@@ -1,7 +1,7 @@
 import styles from './globalNavigation.module.scss';
 import Link from 'next/link';
-import HomeIcon from 'src/icon/home.svg';
-import LinkIcon from 'src/icon/link.svg';
+import HomeIcon from '@icons/home.svg';
+import LinkIcon from '@icons/link.svg';
 
 const GlobalNavigation = (Props: any) => {
   return (
@@ -9,7 +9,7 @@ const GlobalNavigation = (Props: any) => {
       <ul className={styles.list}>
         <li className={styles.item}>
           <Link href="/">
-            <HomeIcon></HomeIcon>
+            <HomeIcon />
           </Link>
         </li>
         <li className={styles.item}>
@@ -26,7 +26,8 @@ const GlobalNavigation = (Props: any) => {
         </li>
         <li className={styles.item}>
           <Link href="https://www.datapacific.co.jp/typequick/" rel="noopener noreferrer" target="_blank">
-            Official Site<LinkIcon></LinkIcon>
+            Official Site
+            <LinkIcon />
           </Link>
         </li>
       </ul>
