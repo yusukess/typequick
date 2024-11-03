@@ -20,7 +20,7 @@ const Header = () => {
       <IconButton href="https://store.shopping.yahoo.co.jp/dponline/" icon={<CartIcon />} />
       <IconButton href="https://www.instagram.com/typequick_japan" icon={<InstagramIcon />} />
       <MenuButton state={openNav} onClick={() => navFunction()} />
-      <GlobalMenu state={openNav} />
+      <GlobalMenu state={openNav} onClick={() => navFunction()} />
     </header>
   );
 };

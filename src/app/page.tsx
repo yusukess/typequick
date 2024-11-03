@@ -5,7 +5,7 @@ import About from '@sections/about/about';
 
 export default function Home() {
   return (
-    <main className={styles.main}>
+    <main className={styles.main} id="top">
       <Mv />
       <Header />
       <div className={styles.inner}>

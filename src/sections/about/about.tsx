@@ -4,7 +4,7 @@ import Panel from '@components/about/panel/panel';
 
 const Item = (props: any) => {
   return (
-    <section className={styles.wrapper}>
+    <section className={styles.wrapper} id="about">
       <div className={styles.inner}>
         <Heading en="About" ja="TypeQuickとは" />
         <p className={styles.lead}>
