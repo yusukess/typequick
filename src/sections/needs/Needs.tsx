@@ -1,15 +1,14 @@
 import styles from './needs.module.scss';
+import Heading from '@components/common/section-heading/sectionHeading';
 
-const Item = (props: any) => {
+const Needs = (props: any) => {
   return (
-    <li className={styles.list}>
-      <div className={styles.item}>
-        <span className={styles.q}>Q.</span>
-        <span className={styles.text}>{props.list.question}</span>
+    <section className={styles.wrapper} id="needs">
+      <div className={styles.inner}>
+        <Heading en="Needs" ja="タイピングの必要性" />
       </div>
-      <div className={styles.answer}>{props.list.answer}</div>
-    </li>
+    </section>
   );
 };
 
-export default Item;
+export default Needs;

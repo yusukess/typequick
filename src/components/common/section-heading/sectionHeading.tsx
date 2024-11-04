@@ -1,6 +1,6 @@
 import styles from './sectionHeading.module.scss';
 
-const menuButton = (Props: any) => {
+const sectionHeading = (Props: any) => {
   return (
     <h2 className={styles.wrapper}>
       <span className={styles.en}>{Props.en}</span>
@@ -9,4 +9,4 @@ const menuButton = (Props: any) => {
   );
 };
 
-export default menuButton;
+export default sectionHeading;

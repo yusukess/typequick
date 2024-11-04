@@ -1,15 +1,14 @@
-import styles from './Product.module.scss';
+import styles from './product.module.scss';
+import Heading from '@components/common/section-heading/sectionHeading';
 
-const Item = (props: any) => {
+const Prtoducts = (props: any) => {
   return (
-    <li className={styles.list}>
-      <div className={styles.item}>
-        <span className={styles.q}>Q.</span>
-        <span className={styles.text}>{props.list.question}</span>
+    <section className={styles.wrapper} id="productr">
+      <div className={styles.inner}>
+        <Heading en="Product" ja="製品" />
       </div>
-      <div className={styles.answer}>{props.list.answer}</div>
-    </li>
+    </section>
   );
 };
 
-export default Item;
+export default Prtoducts;

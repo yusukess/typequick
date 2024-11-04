@@ -1,6 +1,6 @@
 import styles from './panel.module.scss';
 
-const panel = (Props: any) => {
+const Panel = (Props: any) => {
   return (
     <div className={styles.wrapper}>
       <span className={styles.num}>{Props.num}</span>
@@ -10,4 +10,4 @@ const panel = (Props: any) => {
   );
 };
 
-export default panel;
+export default Panel;

@@ -1,0 +1,65 @@
+@use '@styles/mixins';
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: flex-start;
+
+  &:global(.border) {
+    gap: 10px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid var(--color-black);
+  }
+
+  @include mixins.mq(sm) {
+    gap: 15px;
+  }
+}
+
+.heading {
+  display: flex;
+  gap: 24px;
+  align-items: center;
+  width: 100%;
+
+  @include mixins.mq(sm) {
+    gap: 10px;
+  }
+}
+
+.bodyText {
+  /*!*/
+}
+
+.bodySubText {
+  padding: 16px 24px;
+  background-color: var(--color-light-blue);
+  border-radius: 15px;
+
+  @include mixins.mq(sm) {
+    padding: 16px 20px;
+    border-radius: 10px;
+  }
+}
+
+.bodyList {
+  li {
+    display: flex;
+    gap: 4px;
+
+    @include mixins.mq(sm) {
+      font-size: 1.2rem;
+    }
+
+    &::before {
+      font-size: 1.6rem;
+      color: var(--color-bland);
+      content: '●';
+
+      @include mixins.mq(sm) {
+        font-size: 1.2rem;
+      }
+    }
+  }
+}

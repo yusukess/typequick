@@ -1,12 +1,14 @@
 @use '@styles/mixins';
 
 .wrapper {
-  background-color: var(--color-pale-blue);
+  width: 100%;
+  background-color: var(--color-bg-blue);
 }
 
 .inner {
   display: flex;
   flex-direction: column;
+  gap: 50px;
   align-items: flex-start;
   justify-content: flex-start;
   width: var(--pc-inner-width);
@@ -14,8 +16,9 @@
   margin: 0 auto;
 
   @include mixins.mq(sm) {
-    width: var(--sp-inner-width);
-    padding: 50px 0;
+    gap: 25px;
+    width: 100%;
+    padding: 45px 40px;
   }
 }
 

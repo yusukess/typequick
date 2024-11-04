@@ -1,5 +1,6 @@
 import styles from './about.module.scss';
 import Heading from '@components/common/section-heading/sectionHeading';
+import SmallHeading from '@components/common/small-heading/smallHeading';
 import Panel from '@components/about/panel/panel';
 
 const Item = (props: any) => {
@@ -7,11 +8,7 @@ const Item = (props: any) => {
     <section className={styles.wrapper} id="about">
       <div className={styles.inner}>
         <Heading en="About" ja="TypeQuickとは" />
-        <p className={styles.lead}>
-          タイピングには、
-          <br />
-          近道がある。
-        </p>
+        <SmallHeading text={'タイピングには、\n近道がある。'} level={3} type={1} />
         <p className={styles.body}>
           TypeQuickは、1982年にオーストラリアのTypequick社によって開発されたタイピング練習ソフトのベストセラーです。
           <br />

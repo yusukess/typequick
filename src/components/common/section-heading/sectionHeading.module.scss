@@ -5,10 +5,9 @@
   gap: 10px;
   align-items: center;
   justify-content: center;
-  margin-bottom: 49px;
 
   @include mixins.mq(sm) {
-    margin-bottom: 40px;
+    gap: 10px;
   }
 }
 
