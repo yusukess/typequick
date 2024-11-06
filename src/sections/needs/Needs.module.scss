@@ -20,3 +20,14 @@
     padding: 45px 40px;
   }
 }
+
+.headContentWrapper {
+  display: grid;
+  grid-template: none / repeat(2, 1fr);
+  gap: 60px;
+
+  @include mixins.mq(sm) {
+    grid-template: none;
+    gap: 40px;
+  }
+}

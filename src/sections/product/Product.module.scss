@@ -21,3 +21,49 @@
     padding: 45px 40px;
   }
 }
+
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+
+  @include mixins.mq(sm) {
+    gap: 25px;
+  }
+}
+
+.headContentWrapper {
+  display: grid;
+  grid-template: none / repeat(2, 1fr);
+  gap: 60px;
+
+  @include mixins.mq(sm) {
+    grid-template: none;
+    gap: 30px;
+  }
+}
+
+.headContentInner {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+
+  @include mixins.mq(sm) {
+    grid-template: none;
+    gap: 20px;
+  }
+}
+
+.thumbnailWrapper {
+  display: flex;
+}
+
+.thumbnail {
+  align-self: center;
+  margin-top: 15px;
+
+  @include mixins.mq(sm) {
+    width: 250px;
+    margin-top: 0;
+  }
+}

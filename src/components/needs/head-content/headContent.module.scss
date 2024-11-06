@@ -1,0 +1,33 @@
+@use '@styles/mixins';
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: flex-start;
+
+  @include mixins.mq(sm) {
+    gap: 15px;
+  }
+}
+
+.heading {
+  display: flex;
+  gap: 24px;
+  align-items: center;
+  width: 100%;
+
+  @include mixins.mq(sm) {
+    gap: 10px;
+  }
+}
+
+.text {
+  font-size: 2rem;
+  color: var(--color-bland);
+  white-space: pre-wrap;
+
+  @include mixins.mq(sm) {
+    font-size: 1.4rem;
+  }
+}

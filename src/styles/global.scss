@@ -1,2 +1,16 @@
+@use '@styles/mixins';
 @use './variables';
 @use './base';
+
+.is-pc {
+  @include mixins.mq(sm) {
+    display: none;
+  }
+}
+
+.is-sp {
+  display: none;
+  @include mixins.mq(sm) {
+    display: block;
+  }
+}

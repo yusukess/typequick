@@ -3,7 +3,7 @@ import Heading from '@components/common/section-heading/sectionHeading';
 import SmallHeading from '@components/common/small-heading/smallHeading';
 import Panel from '@components/about/panel/panel';
 
-const Item = (props: any) => {
+const About = (props: any) => {
   return (
     <section className={styles.wrapper} id="about">
       <div className={styles.inner}>
@@ -51,4 +51,4 @@ const Item = (props: any) => {
   );
 };
 
-export default Item;
+export default About;
